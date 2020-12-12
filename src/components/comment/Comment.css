@@ -1,0 +1,10 @@
+.comment {
+ display: flex;
+    flex-direction: row;
+}
+
+.comment-name, .comment-body {
+    width: 600px;
+    font-size: 20px;
+    margin-bottom: 7px;
+}

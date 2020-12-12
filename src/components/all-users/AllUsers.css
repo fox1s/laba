@@ -1,0 +1,52 @@
+.body-div {
+    border-radius: 5px;
+    background-color: white;
+    width: 1150px;
+    height: 480px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.body-details-div {
+    border-radius: 5px;
+    background-color: white;
+    width: 1150px;
+    /*height: 200px;*/
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.title-div {
+    width: 1000px;
+    height: 134px;
+    margin-bottom: 10px;
+}
+
+.title-text {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+
+    margin: 40px 0 0 25px;
+}
+
+.body-title {
+    width: 800px;
+    margin: 20px 0 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-title-name, .body-title-email, .body-title-address {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.chosenUserDiv {
+    margin-top: 20px;
+}

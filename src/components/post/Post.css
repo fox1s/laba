@@ -1,0 +1,36 @@
+.post {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.post-title, .post-body {
+    width: 600px;
+    font-size: 20px;
+    margin-bottom: 7px;
+
+}
+
+.title-name {
+    display: block;
+    font-size: 40px;
+}
+
+.post-hr{
+    border: 1px solid #282c34;
+}
+/*.user-link{*/
+/*    color: white;*/
+/*    background-color: #282c34;*/
+/*    text-decoration: none;*/
+/*    border: 2px solid #282c34;*/
+/*    border-radius: 4px;*/
+/*    padding: 0 20px 0 20px;*/
+/*    outline: none;*/
+/*}*/
+/*.user-div-link{*/
+/*    margin-left: 40px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/

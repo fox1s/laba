@@ -1,0 +1,15 @@
+.main-contacts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.link-of-contacts {
+    margin: 0 3px 0 3px;
+    outline: none
+}
+
+.contacts-icon {
+    display: flex;
+    justify-content: center;
+}

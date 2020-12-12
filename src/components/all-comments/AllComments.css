@@ -1,0 +1,35 @@
+.body-comments-div {
+    border-radius: 5px;
+    background-color: white;
+    width: 1150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.title-comments-div {
+    width: 1000px;
+    height: 134px;
+    margin-bottom: 10px;
+}
+
+.title-text-comments {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 40px 0 0 25px;
+}
+
+.body-div-title-comments {
+    width: 800px;
+    margin: 20px 0 15px 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-title-comments{
+font-size: 40px;
+font-weight: bold;
+}
