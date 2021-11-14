@@ -2,7 +2,7 @@
     border-radius: 5px;
     background-color: white;
     width: 1150px;
-    height: 480px;
+    min-height: 480px;
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -49,4 +49,36 @@
 
 .chosenUserDiv {
     margin-top: 20px;
+}
+.btnsWrapper {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.notActive{
+    background-color: #282c34;
+    color: #ffff;
+    height: 35px;
+    width: 200px;
+    border: 0;
+    border-radius: 5px;
+}
+.notActive:hover{
+    cursor: pointer;
+    border: 2px solid #282c34;
+    background-color: #ffff;
+    color: #282c34;
+}
+
+.active {
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #282c34 !important;
+    background-color: #ffff !important;
+    color: #282c34 !important;
+}
+
+hr{
+    border: 2px solid #282c34;
 }

@@ -1,11 +1,9 @@
-import logo from './logo.svg';
+import logo from './img/Cybersecurity-PNG-Photos.png';
 import React, {Component} from 'react';
-import AllUsersComponent from "./components/all-users/AllUsersComponent";
+import {Layout} from "./components/layout/Layout";
 import './App.css';
 import {BrowserRouter as Router, Link, Route, Switch,} from 'react-router-dom';
-import MyContactsComponent from "./components/my-contacts/MyContactsComponent";
-import AllPostsComponent from "./components/all-posts/AllPostsComponent";
-import AllCommentsComponent from "./components/all-comments/AllCommentsComponent";
+import {corporateNetwork, globalNetwork, localNetwork, privateNetwork} from "./DB";
 
 class App extends Component {
     render() {
@@ -17,22 +15,23 @@ class App extends Component {
 
 
                             <div className={'title-header'}>
-                                {/*<p className={'title'}><Link to={''} className={'title'}>React</Link></p>*/}
-                                <Link to={''} className={'title'}>React</Link>
-                                <span className={'title-small'}>Homework 5</span>
-                                <span>by Smikh Rostyslav</span>
+                                <Link to={''} className={'title'}>Класифікація атак на комп'ютерні мережі: захист від НСД</Link>
+
                             </div>
                             <hr className={'title-hr'}/>
 
                             <div className={'main_div_router'}>
                                 <div className={'div_of_link'}>
-                                    <Link to={'/users'} className={'links'}>Users</Link>
+                                    <Link to={'/global-network'} className={'links'}>Глобальні мережі</Link>
                                 </div>
                                 <div className={'div_of_link'}>
-                                    <Link to={'/posts'} className={'links'}>Posts</Link>
+                                    <Link to={'/local-network'} className={'links'}>Локальні мережі</Link>
                                 </div>
                                 <div className={'div_of_link'}>
-                                    <Link to={'/comments'} className={'links'}>Comments</Link>
+                                    <Link to={'/corporate-network'} className={'links'}>Корпоративні мережі</Link>
+                                </div>
+                                <div className={'div_of_link'}>
+                                    <Link to={'/private-network'} className={'links'}>Приватні мережі</Link>
                                 </div>
 
                                 <div className={'logo-div'}>
@@ -40,16 +39,16 @@ class App extends Component {
                                 </div>
                             </div>
                             <hr className={'contacts-hr'}/>
-                            <MyContactsComponent/>
+                            {/*<MyContactsComponent/>*/}
                         </div>
                     </div>
 
                     <div className={'Body'}>
-                        {/*<img src={logo} className="App-logo" alt="logo"/>*/}
                         <Switch>
-                            <Route path={'/users'} render={() => <AllUsersComponent/>}/>
-                            <Route path={'/posts'} render={() => <AllPostsComponent/>}/>
-                            <Route path={'/comments'} render={() => <AllCommentsComponent/>}/>
+                            <Route path={'/global-network'} render={() => <Layout data={globalNetwork} title={'Глобальні мережі'}/>}/>
+                            <Route path={'/local-network'} render={() => <Layout data={localNetwork}  title={'Локальні мережі'}/>}/>
+                            <Route path={'/corporate-network'} render={() => <Layout data={corporateNetwork}  title={'Корпоративні мережі'}/>}/>
+                            <Route path={'/private-network'} render={() => <Layout data={privateNetwork}  title={'Приватні мережі'}/>}/>
                         </Switch>
 
                     </div>

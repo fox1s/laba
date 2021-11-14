@@ -1,0 +1,22 @@
+.titleMain {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #282c34;
+    padding-bottom: 10px;
+    width: 35%;
+}
+
+.describeCharacteristic {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.describeCharacteristic div {
+    margin: 10px 0 10px 0;
+}
+
+.titleOfValue {
+    font-size: 15px;
+    font-weight: bold;
+}
